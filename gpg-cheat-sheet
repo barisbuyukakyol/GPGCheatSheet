@@ -127,6 +127,20 @@ id'si belirtilen anahtarı istenen anahtar sunucusundan çeker.
 
 ----
 
+utf8-strings
+keyserver  hkp://keyserver.ubuntu.com
+
+her seferinde keyserver belirtmemek ve encoding sorunu yaşamamak için ~/.gnupg/gpg.conf dosyasına yukarıdakileri ekleyin.
+
+----
+
+default-cache-ttl 43200
+max-cache-ttl 43200
+
+gpg parolanızı belli bir süre hafızada tutmak için (örn. 12 saat, saniye cinsinden) yukarıdakileri ~/.gnupg/gpg-agent.conf dosyasına ekleyin.
+
+----
+
 --edit-key key_id
 
 id'si belirtilen anahtar ile ilgili belirli düzenlemeler yapmak için kullanılır.
