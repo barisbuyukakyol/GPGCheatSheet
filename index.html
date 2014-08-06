@@ -94,6 +94,18 @@ gpg --import genel.anahtar
 
 ----
 
+gpg --passphrase devletsırrı -c foo.tar.gz
+
+İnteraktif olmayan biçimde (crontab ya da bash script için) dosya şifreler.
+
+----
+
+gpg --passphrase devletsırrı foo.tar.gz.gpg
+
+İnteraktif olmayan biçimde (crontab ya da bash script için) şifreli dosyayı açar. 
+
+----
+
 gpg -e -u "gonderen@sifreleyen.com" -r "alan@sifreyiacan.com" dosya.txt
 
 Gönderen (gonderen@sifreleyen.com) tarafından, "dosya.txt" dosyasını 
