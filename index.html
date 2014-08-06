@@ -136,6 +136,20 @@ id'si belirtilen anahtarı istenen anahtar sunucusundan çeker.
 
 ----
 
+utf8-strings
+keyserver  hkp://keyserver.ubuntu.com
+
+her seferinde keyserver belirtmemek ve encoding sorunu yaşamamak için ~/.gnupg/gpg.conf dosyasına yukarıdakileri ekleyin.
+
+----
+
+default-cache-ttl 43200
+max-cache-ttl 43200
+
+gpg parolanızı belli bir süre hafızada tutmak için (örn. 12 saat, saniye cinsinden) yukarıdakileri ~/.gnupg/gpg-agent.conf dosyasına ekleyin.
+
+----
+
 --edit-key key_id
 
 id'si belirtilen anahtar ile ilgili belirli düzenlemeler yapmak için kullanılır.
@@ -186,7 +200,8 @@ Değişiklikleri kaydetmeden çıkmak için kullanılır.
 
 Parametrelerin anlamları/açıklamaları için: <a href="https://www.gnupg.org/documentation/manpage.html" target=_blank >GPG Manpage</a>
 <hr noshade="noshade">
-Komut önerileri, muhtemel yanlışlar vs. için: <a href="mailto:baris@istanbulhs.org?Subject=GPGCheatSheet">baris@istanbulhs.org</a> <a href="https://twitter.com/poisondentrail" target=_blank >@poisondentrail</a> <a href="https://github.com/barisb/GPGCheatSheet">GitHub</a>
+<a href="https://twitter.com/poisondentrail" target=_blank >@poisondentrail</a> <a href="https://twitter.com/ras0ir" target=_blank >@ras0ir</a> 
+<a href="https://github.com/barisb/GPGCheatSheet">GitHub</a>
 GNU/GPL <a href="http://usrb.in">Barış Büyükakyol</a> 
 </pre>
 </body></html>
