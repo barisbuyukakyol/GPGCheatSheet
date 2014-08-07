@@ -84,13 +84,13 @@ gpg --import genel.anahtar
 "genel.anahtar" adındaki genel anahtarı içe aktarır.
 
 ----
-gpg --passphrase devletsırrı -c foo.tar.gz
+gpg --passphrase xx -c y.tar.gz
 
 İnteraktif olmayan biçimde (crontab ya da bash script için) dosya şifreler.
 
 ----
 
-gpg --passphrase devletsırrı foo.tar.gz.gpg
+gpg --passphrase xx y.tar.gz.gpg
 
 İnteraktif olmayan biçimde (crontab ya da bash script için) şifreli dosyayı açar. 
 
