@@ -148,6 +148,43 @@ id'si belirtilen anahtarı istenen anahtar sunucusundan çeker.
 
 ----
 
+gpg --card-edit
+
+cihaza bağlı olan yubikey gibi akıllı kartlara müdahele etmenizi sağlar.
+
+Bu noktada gpg aracı bağlı olan akıllı kartla iletişime girer ve aşağıdaki
+komutlar uygulanarak kart üzerinde düzenlemeler yapılır.
+
+--
+
+
+admin
+
+kart menüsü içinde yönetici haklarına sahip olmanızı, bu sayede akıllı kart içindeki genel anahtar linki,
+kart sahibi gibi bilgileri düzenlemenizi sağlar.
+
+-
+
+name
+
+akıllı kartın sahibinin ad ve soyadını düzenlemenizi sağlar.
+
+-
+
+url
+
+akıllı kart içinde genel anahtar linki tanımlamanızı sağlar.
+
+-
+
+generate
+
+yeni genel ve özel anahtar çiftleri oluşturmanızı sağlar.
+
+----
+
+
+
 utf8-strings
 keyserver  hkp://keyserver.ubuntu.com
 
@@ -198,6 +235,27 @@ showphoto
 Eğer anahtara görsel eklenmişse bu görseli görüntülemek için kullanılır.
 
 -
+
+toggle
+
+bu komut çalıştırıldılça listemelede genel ve gizli anahtarlar yer değiştirir.
+
+-
+
+key sayı
+
+tamsayı olarak girilen bu sayı değeri ile alt anahtarlara işlem yapmak için işaret atanabilir.
+Örn: sırayla key 1, key 2, key 1 derseniz önce birinci anahtar işaretlenir,
+ardından 2. key işaretlenir, son olarak 1. anahtarın işareti kalkar.
+
+-
+
+keytocard
+
+seçilmiş alt anahtarların smart card'a aktarılmasını sağlar.
+
+-
+
 
 save
 
