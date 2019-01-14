@@ -11,7 +11,7 @@ GnuPG CheatSheet
 </pre>
 
 <a id="gen-key"></a>
-####Anahtar Çifti Oluşturma
+#### Anahtar Çifti Oluşturma
 <code>gpg --gen-key</code>
 
 Anahtar çifti oluşturmak için kullanılır.
@@ -36,7 +36,7 @@ id'si belirtilen anahtar için, örn. "iptal_sertifika.asc" olarak ASCII zırlı
 sunucuya göndererek ([--send-keys](#send-keys)) bunu sağlayabilirsiniz.
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
-####Anahtar Yönetimi<a id="key-management"></a>
+#### Anahtar Yönetimi<a id="key-management"></a>
 
 <code>gpg --list-secret-keys</code>
 
@@ -92,7 +92,7 @@ id'si ya da kullanıcı adı belirtilen genel anahtarı örn. "genel_anahtar.asc
 örn. "genel.anahtar" adındaki genel anahtarı içe aktarır.<br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-####İmza İşlemleri<a id="sign"></a>
+#### İmza İşlemleri<a id="sign"></a>
 
 <code> gpg --clearsign mesaj.txt</code>
 
@@ -160,7 +160,7 @@ alıcı (y@e-posta.com) için şifreler ve imzalar. dosya.\*.gpg olarak dışar�
 Şifreli dosyayı (örn. dosya.*.gpg) deşifre eder ve belirtilen ad-tür ile dışa aktarır.<br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-####Anahtar Sunucusu<a id="keyserver"></a>
+#### Anahtar Sunucusu<a id="keyserver"></a>
 
 <a id="send-keys"></a><code>gpg --keyserver sunucu_url --send-keys key_id</code>
 
@@ -177,7 +177,7 @@ id'si belirtilen anahtarı istenen anahtar sunucusundan çeker. <br />
 Tercih edilen arama parametresine göre, belirtilen anahtar sunucusundan, genel anahtarı/anahtarları numaralandırarak listeler. Girilen numara ile istenen anahtarı çeker. <br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         
-####Anahtar Düzenleme<a id="edit-key"></a>
+#### Anahtar Düzenleme<a id="edit-key"></a>
 
 <code>gpg --edit-key key_id</code>
 
@@ -228,7 +228,7 @@ Değişiklikleri kaydedip çıkmak için kullanılır.<br />
 Değişiklikleri kaydetmeden çıkmak için kullanılır.<br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-####Akıllı Kartlar [[k2](#cont-2)] <a id="smart-cards"></a>
+#### Akıllı Kartlar [[k2](#cont-2)] <a id="smart-cards"></a>
 
 <code>gpg --card-edit</code>
 
@@ -285,7 +285,7 @@ Değişiklikleri kaydetmeden çıkmak için kullanılır.<br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-###İpuçları<a id="tips"></a>
+### İpuçları<a id="tips"></a>
 
 Anahtar çiftinizin oluşturulma sürecinde daha fazla entropy oluşturmak için rng-tools'u<sup>[1](#1)</sup> kullanabilirsiniz. 
 
@@ -308,22 +308,22 @@ max-cache-ttl 43200<br />
 \---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-####Referans<a id="ref"></a>
+#### Referans<a id="ref"></a>
 The GNU Privacy Guard Manual: [https://www.gnupg.org/documentation/manuals/gnupg-2.0/](https://www.gnupg.org/documentation/manuals/gnupg-2.0/)
 
 The GnuPG Smartcard HOWTO: [https://www.gnupg.org/howtos/card-howto/en/smartcard-howto.html](https://www.gnupg.org/howtos/card-howto/en/smartcard-howto.html)
 
 <a id="contributor"></a>
-####Katkı
+#### Katkı
 Barış Büyükakyol -- [usrb.in](http://usrb.in) <br>
 <a id="cont-1"></a>Samed Beyribey[k1]-- [eventualis.org] (https://eventualis.org)<br>
 <a id="cont-2"></a>Arda Kılıçdağı[k2]-- [arda.kilicdagi.com](https://arda.kilicdagi.com)
 
 <a id="license"></a>
-####Lisans
+#### Lisans
 
 Bu döküman GNU Free Documentation License v1.3 altındadır. 
 Lisans metni: [eng](https://www.gnu.org/licenses/fdl.html) / [tr](http://ozgurlisanslar.org.tr/fdl/gnu-free-documentation-license-version-1-3/)
 
-####Bağlantılar
+#### Bağlantılar
 <a id="1"></a>[1]:  Random Number Generator Tools [https://www.gnu.org/software/hurd/user/tlecarrour/rng-tools.html](https://www.gnu.org/software/hurd/user/tlecarrour/rng-tools.html)
